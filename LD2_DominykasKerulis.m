@@ -58,10 +58,10 @@ B = A(2 : 2 : end);
 nelyginiai = 1 : 2 : length(A);
 C = A(nelyginiai(end : -1 : 1));
 
-disp('vektorius B yra:');
+disp('Vektorius B yra:');
 disp(B);
 
-disp('vektorius C yra:');
+disp('Vektorius C yra:');
 disp(C);
 
 

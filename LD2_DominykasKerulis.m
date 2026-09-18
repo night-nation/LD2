@@ -3,12 +3,13 @@ close all
 clear all
 clc
 
-
+%=====================
 a = 10:-1:-15;
 b = log2(a);
 c = a ./ b;
 atsakymas = c.'
 
+%=====================
 
 C1 = pi/2 : pi/2 : 3*pi/2;
 C2 = -1 : 1;
@@ -18,7 +19,7 @@ C = [C1;C2;C3]
 
 sum(C, 2)
 
-
+%=====================
 
 A = 5.5;           
 f = 8;              
@@ -26,9 +27,7 @@ sigma = 0.8;
 U1 = 3.5;           
 U2 = 1.5;          
 
-
 t = 0 : 0.002 : 1.2;
-
 
 s_svarus = A * sin(2 * pi * f * t);
 n = sigma * randn(size(t));
@@ -49,14 +48,12 @@ max_filtruotas = max(s_filtruotas)
 min_filtruotas = min(s_filtruotas)
 
 
-
-
+%======================================
 
 
 A = input('Įveskite vektorių A: ');
 
 B = A(2 : 2 : end);
-
 
 nelyginiai = 1 : 2 : length(A);
 C = A(nelyginiai(end : -1 : 1));

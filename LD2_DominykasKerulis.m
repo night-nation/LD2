@@ -1,0 +1,30 @@
+% Dominykas Kerulis, EF-25/2, 2026-09-18
+close all
+clear all
+clc
+
+
+a = 10:-1:-15;
+b = log2(a);
+c = a ./ b;
+atsakymas = c.'
+
+
+C1 = pi/2 : pi/2 : 3*pi/2;
+C2 = -1 : 1;
+C3 = -3 : -1 : -5;
+
+C = [C1;C2;C3]
+
+sum(C, 2)
+
+
+
+
+
+
+
+
+
+
+

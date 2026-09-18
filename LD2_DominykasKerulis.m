@@ -53,6 +53,23 @@ min_filtruotas = min(s_filtruotas)
 
 
 
+A = input('Įveskite vektorių A: ');
+
+B = A(2 : 2 : end);
+
+paskutinis_nelyginis = length(A) - mod(length(A), 2); 
+if paskutinis_nelyginis == 0 && ~isempty(A), paskutinis_nelyginis = 1; end
+
+nelyginiai_indeksai = 1 : 2 : length(A);
+C = A(nelyginiai_indeksai(end : -1 : 1));
+
+disp('vektorius B yra:');
+disp(B);
+
+disp('vektorius C yra:');
+disp(C);
+
+
 
 
 
